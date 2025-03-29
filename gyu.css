@@ -6,7 +6,7 @@
 }
 
 .yt {
-    color: red;
+    color: #fff;
 }
 
 .hart {
@@ -56,7 +56,7 @@ h1 {
 
 
 i {
-    color: antiquewhite;
+    color: #fff;
     cursor: pointer;
     padding-right: 1rem;
     font-size: 30px;
@@ -193,7 +193,8 @@ a {
 }
 
 .con .box .content h2 {
-    color: #fff;
+    text-shadow: 4px 4px #0C1618;
+    color: rgb(93, 190, 93);
     transition: 0.5s;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -225,6 +226,7 @@ a {
 }
 
 @media (max-width: 1024px) {
+    
     .waya {
         display: none;
     }
@@ -256,6 +258,224 @@ a {
     }
 
     .big-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* About */
+.h-box {
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 600dvw;
+    margin: auto;
+    padding: 40px 10px;
+}
+
+
+.imagebox2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.sec-four{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+
+.textbox2 {
+    background-color: #232b2b;
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    text-align: center;
+    padding-top: 90px;
+    margin-left: 85px;
+    
+    
+}
+
+
+.feature-box {
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(102, 51, 196, 0.1);
+    width: 300px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #232b2b;
+    border-radius: 10px;
+}
+
+
+.feature-box i {
+    font-size: 90px;
+    color: blueviolet;
+    margin-bottom: 15px;
+    margin-left: 18px;
+}
+
+.bosref {
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    padding: 50px;
+    background: #232b2b;
+}
+
+.bosref h2 {
+    margin-bottom: 20px;
+
+}
+.bosref .p3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Characters */
+
+.about-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.conBox {
+    background: #232b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px #fff;
+    display: flex;
+    gap: 20px;
+}
+
+.color {
+    text-shadow: 4px 4px #0C1618;
+    color: rgb(93, 190, 93);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.color2 {
+    font-size: 20px;
+    color: blueviolet;
+    line-height: 1.5;
+}
+
+.about {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+img{
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+}
+
+@media (max-width: 1024px) {
+    .about-one {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .features-section {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .sec-four {
+        grid-template-columns: 1fr; 
+    }
+
+    .sec-four .imagebox2{
+        margin-right: 5%;
+    }
+
+    .sec-four .textbox2{
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .about-one {
+        grid-template-columns: 1fr; 
+    }
+    .features-section {
+        grid-template-columns: 1fr;
+    }
+    .sec-four {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Project */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+
+.project-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(136, 100, 165, 0.664);
+    
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.project-box:hover .project-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .projects-container {
         grid-template-columns: 1fr;
     }
 }
